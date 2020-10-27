@@ -20,7 +20,7 @@ LABEL org.opencontainers.image.title="bdwyertech/cdktf" \
 
 RUN yarn global add cdktf-cli
 
-ENV DEFAULT_TERRAFORM_VERSION=0.13.0
+ENV DEFAULT_TERRAFORM_VERSION=0.13.5
 
 # Install Terraform
 RUN apk add curl docker-cli unzip && AVAILABLE_TERRAFORM_VERSIONS="0.12.29 ${DEFAULT_TERRAFORM_VERSION}" && \
